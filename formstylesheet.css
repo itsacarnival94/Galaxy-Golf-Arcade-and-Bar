@@ -141,80 +141,54 @@ body{
   border-color: #666666;
   background: #292929;
 }
-
-#form-page {
-    display: flex;
-    flex-flow: column nowrap;
-
-    justify-content: center;
-    justify-self: center;
-
-    width: 100vw;
-    max-width: 700px;
-}
-
-/*shjhjs*/
-
-.custom-date-input {
-  appearance: none;
-  -webkit-appearance: none;
-  font-family: inherit;
-  font-size: 1rem;
-  color: #333333;
-  background-color: #ffffff;
-  padding: 10px 15px;
-  border: 2px solid #cbd5e1;
-  border-radius: 8px;
-  outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  box-sizing: border-box;
-  display: inline-flex;
+button {
   align-items: center;
-}
-
-/* Focus state */
-.custom-date-input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
-}
-
-/* 1. Style the text and slash separators (WebKit / Chrome / Safari / Edge) */
-.custom-date-input::-webkit-datetime-edit {
-  padding: 0;
-}
-
-.custom-date-input::-webkit-datetime-edit-fields-wrapper {
-  background: transparent;
-}
-
-.custom-date-input::-webkit-datetime-edit-text {
-  color: #94a3b8; /* Changes color of the slashes/dashes */
-  padding: 0 4px;
-}
-
-/* 2. Style individual text parts (Month, Day, Year slots) */
-.custom-date-input::-webkit-datetime-edit-month-field,
-.custom-date-input::-webkit-datetime-edit-day-field,
-.custom-date-input::-webkit-datetime-edit-year-field {
-  color: #1e293b;
-}
-
-/* 3. Hide the clear "X" and spin adjustment buttons if unwanted */
-.custom-date-input::-webkit-clear-button,
-.custom-date-input::-webkit-inner-spin-button {
-  display: none;
-  -webkit-appearance: none;
-}
-
-/* 4. Style the clickable calendar dropdown icon */
-.custom-date-input::-webkit-calendar-picker-indicator {
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
   cursor: pointer;
-  border-radius: 4px;
-  padding: 4px;
-  filter: invert(30%) sepia(20%) saturate(1000%) hue-rotate(200deg); /* Adjusts default icon color */
-  transition: background-color 0.2s;
+  transition: all 0.3s;
+  font-family: 'Equinox';
+  color:white;
+}
+a{
+    color:white;
+    text-decoration: none;
 }
 
-.custom-date-input::-webkit-calendar-picker-indicator:hover {
-  background-color: #f1f5f9;
+button:active,
+button:hover {
+  outline: 0;
+}
+
+button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
 }
