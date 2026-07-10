@@ -3,7 +3,7 @@ body{
     color:white;
 }
 .nav-bar{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -140,4 +140,81 @@ body{
 .boton-elegante:hover {
   border-color: #666666;
   background: #292929;
+}
+
+#form-page {
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    justify-self: center;
+
+    width: 100vw;
+    max-width: 700px;
+}
+
+/*shjhjs*/
+
+.custom-date-input {
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #333333;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Focus state */
+.custom-date-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* 1. Style the text and slash separators (WebKit / Chrome / Safari / Edge) */
+.custom-date-input::-webkit-datetime-edit {
+  padding: 0;
+}
+
+.custom-date-input::-webkit-datetime-edit-fields-wrapper {
+  background: transparent;
+}
+
+.custom-date-input::-webkit-datetime-edit-text {
+  color: #94a3b8; /* Changes color of the slashes/dashes */
+  padding: 0 4px;
+}
+
+/* 2. Style individual text parts (Month, Day, Year slots) */
+.custom-date-input::-webkit-datetime-edit-month-field,
+.custom-date-input::-webkit-datetime-edit-day-field,
+.custom-date-input::-webkit-datetime-edit-year-field {
+  color: #1e293b;
+}
+
+/* 3. Hide the clear "X" and spin adjustment buttons if unwanted */
+.custom-date-input::-webkit-clear-button,
+.custom-date-input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* 4. Style the clickable calendar dropdown icon */
+.custom-date-input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px;
+  filter: invert(30%) sepia(20%) saturate(1000%) hue-rotate(200deg); /* Adjusts default icon color */
+  transition: background-color 0.2s;
+}
+
+.custom-date-input::-webkit-calendar-picker-indicator:hover {
+  background-color: #f1f5f9;
 }
