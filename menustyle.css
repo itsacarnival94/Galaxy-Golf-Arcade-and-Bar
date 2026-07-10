@@ -5,6 +5,13 @@
     font-display: swap;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Manrope';
+    src: url('fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+
+    font-display: swap;
+    font-style: normal;
+}
 
 body{
     background-color: #531253;
@@ -13,6 +20,8 @@ body{
 }
 p{
     text-align: center;
+    font-family: 'Manrope';
+    font-size: 30px;
 }
 h1{
     font-family: fantasy;
@@ -35,7 +44,13 @@ h1{
    
 }
 .below-nav{
+    display: flex;
+
     margin-top: 100px;
+    justify-self: center;
+    justify-content: center;
+
+    flex-flow: column nowrap;
 }
 /* From Uiverse.io by cssbuttons-io */ 
 button {
@@ -89,3 +104,4 @@ button:hover span {
 button:active {
   transform: scale(0.9);
 }
+
