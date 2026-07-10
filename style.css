@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'CafeMajestic';
-    src: url('CafeMajestic-Regular.otf') format('otf');
+    src: url('CafeMajestic-Regular.otf') format('opentype');
 
     font-display: swap;
     font-style: normal;
@@ -11,16 +11,20 @@ body {
     margin: 0px;
 
     font-family: 'CafeMajestic';
+    background-color: midnightblue;
 }
 
 #navbar {
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 
     position: sticky;
     top: 0px;
 
     width: 100vw;
-    height: 90px;
+    height: 100px;
 
     background: #2A7B9B;
     background: linear-gradient(90deg, #2a7b9b 0%, #3f9e9c 25%, #57c785 50%, #a68bb6 75%, #c653ed 100%);
@@ -28,9 +32,30 @@ body {
     padding: 10px;
 }
 
-.nav-title {
+#nav-title {
     color: aliceblue;
 
     margin: 0px;
+    padding: 0px;
+
     font-size: 32pt;
+    text-decoration: none;
+}
+
+#nav-table {
+    display: flex;
+    justify-content: left;
+}
+
+#form-page {
+    display: flex;
+
+    flex-flow: column wrap;
+    justify-self: center;
+
+    background-color: #2A7B9B;
+    max-width: 800px;
+    width: 100vw;
+
+    padding: 20px;
 }
