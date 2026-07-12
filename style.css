@@ -28,6 +28,7 @@
     --turquoise-lg: #B3F2DD;
 
     --shadow: 0px 0px 38px 2px #00000054;
+    --focused-shadow: 0px 0px 38px 2px #000000a5;
 
     --accent-font: 'Equinox';
     --body-font: 'Manrope';
@@ -76,6 +77,8 @@ hr {
     margin: 0px;
     padding: 0px;
 
+    text-decoration: none;
+
     font-size: 24pt;
     color: var(--porcelain-w);
     
@@ -113,6 +116,10 @@ hr {
 
     transition: 0.3s;
     transform: translateY(-3px);
+}
+
+.button:hover, .special-button:hover {
+    box-shadow: var(--focused-shadow);
 }
 
 .button:active, .nav-title:active, .special-button:active {
@@ -187,6 +194,16 @@ input, textarea {
     border-radius: 10px;
 
     box-shadow: var(--shadow);
+
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    transform: scale(1.025);
+
+    outline: none;
+
+    box-shadow: var(--focused-shadow);
 }
 
 textarea {

@@ -9,10 +9,10 @@
     </head>
     <body>
         <div id="navbar">
-            <p class="nav-title"> Galaxy Golf Arcade and Bar</p>
+            <a href="index.html" class="nav-title">Galaxy Golf Arcade and Bar</a>
 
             <a href="login.html" target="_self" class="button">Login</a>
-            <a href="index.html" target="_self" class="button">Snack Bar Menu</a>
+            <a href="menu.html" target="_self" class="button">Snack Bar Menu</a>
         </div>
 
         <div id="page-body">
@@ -20,14 +20,16 @@
             <hr>
 
             <form style="display: flex; flex-flow: column nowrap;">
-                <div class="input-label-pair">
-                    <label for="first-name-entry">First Name</label>
-                    <input type="text" id="first-name-entry">
-                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+                    <div class="input-label-pair">
+                        <label for="first-name-entry">First Name</label>
+                        <input type="text" id="first-name-entry">
+                    </div>
 
-                <div class="input-label-pair">
-                    <label for="last-name-entry">Last Name</label>
-                    <input type="text" id="last-name-entry">
+                    <div class="input-label-pair">
+                        <label for="last-name-entry">Last Name</label>
+                        <input type="text" id="last-name-entry">
+                    </div>
                 </div>
 
                 <div class="input-label-pair">
@@ -40,14 +42,16 @@
                     <input type="tel" id="phone-entry">
                 </div>
                 
-                <div class="input-label-pair">
-                    <label for="date-entry">Date</label>
-                    <input type="date" id="date-entry">
-                </div>
-                
-                <div class="input-label-pair">
-                    <label for="time-entry">Time</label>
-                    <input type="time" id="time-entry">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+                    <div class="input-label-pair">
+                        <label for="date-entry">Date</label>
+                        <input type="date" id="date-entry">
+                    </div>
+                    
+                    <div class="input-label-pair">
+                        <label for="time-entry">Time</label>
+                        <input type="time" id="time-entry">
+                    </div>
                 </div>
 
                 <div class="input-label-pair">
@@ -55,7 +59,7 @@
                     <textarea id="info-entry"></textarea>
                 </div>
 
-                <button class="special-button" style="font-size: 32pt; margin: 25px 0px 0px 0px; font-family: var(--body-font);">Book Now!</button>
+                <button class="special-button" style="font-size: 32pt; margin: 30px 0px 0px 0px; font-family: var(--body-font);">Book Now!</button>
             </form>
         </div>
         
@@ -106,7 +110,7 @@
             </label>
 
             <label for="start-date">Choose Date:</label>
-            <input type="date" id="start-date" class="custom-date-input" name="trip-start">-->
-        </div>
+            <input type="date" id="start-date" class="custom-date-input" name="trip-start">
+        </div>-->
     </body>
 </html>
