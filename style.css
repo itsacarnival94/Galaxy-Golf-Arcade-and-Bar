@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Equinox';
-    src: url('fonts/Equinox\ Regular.otf') format('opentype');
+    src: url('Fonts/equinox-regular.otf') format('opentype');
 
     font-display: swap;
     font-style: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Manrope';
-    src: url('fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+    src: url('Fonts/manrope-variable-font-wght.ttf') format('truetype');
 
     font-display: swap;
     font-style: normal;
@@ -89,7 +89,7 @@ hr {
     margin: 0px;
     padding: 10px;
 
-    font-size: 12pt;
+    font-size: 16pt;
     color: var(--indigo-b);
 
     align-content: center;
@@ -150,13 +150,14 @@ hr {
     min-height: 100vh;
 }
 
-.menu-img {
+img {
     justify-self: center;
+    align-self: center;
 
     padding: 5px;
     margin: 20px auto;
 
-    width: 95%;
+    max-width: 95%;
 
     box-shadow: var(--shadow);
 
@@ -164,7 +165,7 @@ hr {
 }
 
 .page-title {
-    margin: 0px;
+    margin: 0px auto 20px auto;
     padding: 0px;
 
     font-size: 32pt;
@@ -212,4 +213,76 @@ textarea {
     field-sizing: content;
 
     min-height: 10rem;
+}
+
+p {
+    margin: 10px;
+    padding: 0px;
+}
+
+.img-carousel {
+    display: grid;
+
+    justify-self: center;
+    align-self: center;
+
+    box-sizing: border-box;
+
+    background-color: var(--indigo-b);
+
+    border-radius: 10px;
+
+    width: 100%;
+
+    padding: 40px;
+    gap: 20px;
+
+    box-shadow: var(--shadow);
+
+    transition: 0.3s;
+}
+
+.img-carousel:hover {
+    box-shadow: var(--focused-shadow);
+
+    transform: scale(1.01);
+}
+
+#ad-banner, .ad-box {
+    background-color: var(--turquoise-lg);
+
+    font-family: var(--body-font);
+
+    text-align: center;
+
+    color: var(--indigo-b);
+
+    box-shadow: var(--shadow);
+
+    margin: 0px;
+    padding: 10px;
+
+    transition: 0.3s;
+}
+
+#ad-banner {
+    font-size: 16pt;
+
+    width: 100vw;
+}
+
+.ad-box {
+    font-size: 30pt;
+
+    border-radius: 10px;
+
+    margin: 30px 0px;
+}
+
+#ad-banner:hover, .ad-box:hover {
+    box-shadow: var(--focused-shadow);
+}
+
+.ad-box:hover {
+    transform: scale(1.01);
 }
