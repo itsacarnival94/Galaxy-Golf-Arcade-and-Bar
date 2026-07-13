@@ -26,7 +26,7 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param("siss", $name, $age, $email, $phone);
 
 if ($stmt->execute()) {
-    echo "Data saved successfully!";
+    exit;
 } else {
     echo "Error: " . $stmt->error;
 }
