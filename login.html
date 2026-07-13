@@ -2,13 +2,30 @@
 
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Galaxy Golf Menu</title>
+  </head>
+  <body>
+    <div id="navbar">
+            <a href="index.html" class="nav-title">Galaxy Golf Arcade and Bar</a>
+
+            <a href="login.html" target="_self" class="button">Login</a>
+            <a href="menu.html" target="_self" class="button">Snack Bar Menu</a>
+            <a href="booking-form.html" target="_self" class="special-button">Book Your Next Golf Outing!</a>
+        </div>
+
+        <p id="ad-banner">ALL BOOKINGS OF PARTIES WITH 4+ PEOPLE ARE 50% OFF; ENDS JULY 18TH!!</p>
+
+        <div id="page-body">
+            <h1 class="page-title">Book Your Next Golf Outing!</h1>
+            <hr>
+
+    
+    <link rel="stylesheet" href="style.css">  
+
     
     <meta charset="UTF-8">
-  </head>
-  
-  <body>
+
+
+
     <form id="userForm" action="submit.php" method="POST">
       <label for="name">Name:</label><br>
       <input type="text" id="name" name="name"><br><br>
@@ -22,8 +39,8 @@
       <label for="phone">Phone:</label><br>
       <input type="tel" id="phone" name="phone"><br><br>
 
-      <button type="submit">Send</button>
+      <button type="submit" class="abutton">Send</button>
     </form>
 
-  </body>
+</body>
 </html>
